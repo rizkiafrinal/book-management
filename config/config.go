@@ -9,7 +9,7 @@ import (
 )
 
 func ConnectDB() *sql.DB {
-	dbURL := "host=localhost port=5432 user=postgres password=Aviat12 dbname=book_db sslmode=disable"
+	dbURL := "host=postgres.railway.internal port=5432 user=postgres password=RJynwNElWuDSbyYcJyxpbrkyXVPJraoL dbname=railway sslmode=disable"
 	if dbURL == "" {
 		log.Fatal("DATABASE_URL is not set")
 	}
