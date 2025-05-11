@@ -1,8 +1,8 @@
 package main
 
 import (
-    "book-management/config"
-    "book-management/routes"
+    "book-management-fixed/config"
+    "book-management-fixed/routes"
     "github.com/gin-gonic/gin"
 )
 

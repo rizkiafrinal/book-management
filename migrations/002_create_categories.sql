@@ -7,6 +7,5 @@ CREATE TABLE categories (
     modified_at TIMESTAMP,
     modified_by VARCHAR
 );
-
 -- +migrate Down
 DROP TABLE IF EXISTS categories;

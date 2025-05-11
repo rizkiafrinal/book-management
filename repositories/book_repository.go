@@ -2,7 +2,7 @@ package repositories
 
 import (
     "database/sql"
-    "book-management/models"
+    "book-management-fixed/models"
 )
 
 func GetAllBooks(db *sql.DB) ([]models.Book, error) {

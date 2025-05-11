@@ -3,7 +3,7 @@ package handlers
 import (
     "database/sql"
     "net/http"
-    "book-management/repositories"
+    "book-management-fixed/repositories"
     "github.com/gin-gonic/gin"
 )
 

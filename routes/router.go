@@ -2,8 +2,8 @@ package routes
 
 import (
     "database/sql"
-    "book-management/handlers"
-    "book-management/middlewares"
+    "book-management-fixed/handlers"
+    "book-management-fixed/middlewares"
     "github.com/gin-gonic/gin"
 )
 

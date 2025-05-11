@@ -8,6 +8,5 @@ CREATE TABLE users (
     modified_at TIMESTAMP,
     modified_by VARCHAR
 );
-
 -- +migrate Down
 DROP TABLE IF EXISTS users;
