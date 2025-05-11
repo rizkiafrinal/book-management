@@ -1,4 +1,0 @@
-development:
-  dialect: postgres
-  datasource: postgres://postgres:RJynwNElWuDSbyYcJyxpbrkyXVPJraoL@postgres.railway.internal:5432/railway
-  dir: migrations
