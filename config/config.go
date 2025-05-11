@@ -4,20 +4,15 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"os"
 
-	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
 )
 
-func LoadEnv() {
-	if err := godotenv.Load(); err != nil {
-		log.Println("No .env file found")
-	}
-}
-
 func ConnectDB() *sql.DB {
-	dbURL := os.Getenv("DATABASE_URL")
+	dbURL := "postgresql://postgres:RJynwNElWuDSbyYcJyxpbrkyXVPJraoL@localhost:5432/railway"
+	if dbURL == "" {
+		log.Fatal("DATABASE_URL is not set")
+	}
 	db, err := sql.Open("postgres", dbURL)
 	if err != nil {
 		log.Fatalf("Error connecting to DB: %v", err)

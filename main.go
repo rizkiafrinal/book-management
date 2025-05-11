@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-	config.LoadEnv()
 	db := config.ConnectDB()
 	defer db.Close()
 
